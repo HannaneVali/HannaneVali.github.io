@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hana Valibeik | Graphic Designer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        .animate-scroll {
+            animation: scroll 25s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white bg-opacity-90 backdrop-blur-sm z-50 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-gray-900">Hana Valibeik</a>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="#work" class="text-gray-700 hover:text-gray-900">Work</a>
+                    <a href="#about" class="text-gray-700 hover:text-gray-900">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-5xl sm:text-7xl font-bold text-gray-900 mb-6">Art meets<br/>strategic design</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mb-8">Professional graphic designer and illustrator with a decade of experience crafting compelling visual narratives. Specializing in brand identity, digital design, and artistic illustration.</p>
+            <a href="#contact" class="bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition">
+                Let's collaborate
+            </a>
+        </div>
+    </header>
+
+    <!-- Skills Marquee -->
+    <div class="bg-black text-white py-8 overflow-hidden">
+        <div class="animate-scroll whitespace-nowrap">
+            <span class="text-2xl mx-8">Brand Identity</span>
+            <span class="text-2xl mx-8">⚡</span>
+            <span class="text-2xl mx-8">Digital Design</span>
+            <span class="text-2xl mx-8">⚡</span>
+            <span class="text-2xl mx-8">Illustration</span>
+            <span class="text-2xl mx-8">⚡</span>
+            <span class="text-2xl mx-8">Digital Painting</span>
+            <span class="text-2xl mx-8">⚡</span>
+            <span class="text-2xl mx-8">Photography</span>
+            <span class="text-2xl mx-8">⚡</span>
+        </div>
+    </div>
+
+    <!-- Work Section -->
+    <section id="work" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Portfolio</h2>
+            <p class="text-gray-600 mb-12">A selection of professional and personal works showcasing my range as a visual artist.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Commercial Project -->
+                <div class="project-card relative overflow-hidden rounded-lg">
+                    <img src="/api/placeholder/1.png" alt="Brand Identity Project" class="w-full h-auto">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-75 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-center text-white p-4">
+                            <h3 class="text-xl font-bold mb-2">Corporate Identity</h3>
+                            <p class="mb-4">Brand Strategy & Visual Identity</p>
+                            <a href="https://www.instagram.com/p/DFVbp8bIlEZ/" target="_blank" class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Freelance Project -->
+                <div class="project-card relative overflow-hidden rounded-lg">
+                    <img src="/api/placeholder/2.png" alt="Digital Design Project" class="w-full h-auto">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-75 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-center text-white p-4">
+                            <h3 class="text-xl font-bold mb-2">Digital Campaign</h3>
+                            <p class="mb-4">Social Media & Digital Marketing</p>
+                            <a href="https://www.instagram.com/p/CouzS7cNH3p/" target="_blank" class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Personal Art -->
+                <div class="project-card relative overflow-hidden rounded-lg">
+                    <img src="/api/placeholder/3.png" alt="Illustration Project" class="w-full h-auto">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-75 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-center text-white p-4">
+                            <h3 class="text-xl font-bold mb-2">Artistic Expression</h3>
+                            <p class="mb-4">Digital Illustration & Painting</p>
+                            <a href="https://www.instagram.com/p/CosS2Y7tf7e/" target="_blank" class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More Button -->
+            <div class="text-center mt-12">
+                <a href="#contact" class="bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition">
+                    View More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="/api/placeholder/me.png" alt="Hana Valibeik" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
+                    <p class="text-gray-600 mb-6">With a BSc in Graphic Design and MSc in Illustration from Iran's premier art university, I bring a decade of professional experience to every project. My work spans corporate identity, digital design, and artistic illustration, combining technical precision with creative vision.</p>
+                    <p class="text-gray-600 mb-6">I'm proficient in the entire Adobe Creative Suite, specializing in Photoshop, Illustrator, Premiere, and Lightroom. My expertise extends to digital painting and professional photography, allowing me to offer comprehensive visual solutions.</p>
+                    <p class="text-gray-600 mb-8">Beyond commercial work, I maintain an active artistic practice, sharing illustrations and paintings through my Instagram platform, where I believe in making art accessible to all.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/hanavalibeik_/" target="_blank" class="text-black hover:text-gray-600">Instagram</a>
+                        <a href="https://www.linkedin.com/in/hana-valibeik-graphic-designer-504180187/" target="_blank" class="text-black hover:text-gray-600">LinkedIn</a>
+                        <a href="https://dribbble.com/hanavalibeik" target="_blank" class="text-black hover:text-gray-600">Dribbble</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Let's Create Something Together</h2>
+                <p class="text-gray-600 mb-8">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                <a href="mailto:hanavalibeik@yahoo.com" class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition mb-8">Get in Touch</a>
+                <div class="text-gray-600">
+                    <p>hanavalibeik@yahoo.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-6 lg:px-8 border-t">
+        <div class="max-w-7xl mx-auto text-center text-gray-600">
+            <p>© 2025 Hana Valibeik. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
