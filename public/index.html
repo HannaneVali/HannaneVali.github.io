@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +14,7 @@
         }
         @keyframes scroll {
             0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            100% { transform: translateX(-100%); }
         }
     </style>
 </head>
@@ -50,6 +49,18 @@
     <!-- Skills Marquee -->
     <div class="bg-black text-white py-8 overflow-hidden">
         <div class="animate-scroll whitespace-nowrap">
+            <!-- Duplicate content for seamless scroll -->
+            <span class="text-2xl mx-8">Brand Identity</span>
+            <span class="text-2xl mx-8">⚡</span>
+            <span class="text-2xl mx-8">Digital Design</span>
+            <span class="text-2xl mx-8">⚡</span>
+            <span class="text-2xl mx-8">Illustration</span>
+            <span class="text-2xl mx-8">⚡</span>
+            <span class="text-2xl mx-8">Digital Painting</span>
+            <span class="text-2xl mx-8">⚡</span>
+            <span class="text-2xl mx-8">Photography</span>
+            <span class="text-2xl mx-8">⚡</span>
+            <!-- Repeat duplicate -->
             <span class="text-2xl mx-8">Brand Identity</span>
             <span class="text-2xl mx-8">⚡</span>
             <span class="text-2xl mx-8">Digital Design</span>
@@ -69,46 +80,99 @@
             <h2 class="text-3xl font-bold text-gray-900 mb-4">Portfolio</h2>
             <p class="text-gray-600 mb-12">A selection of professional and personal works showcasing my range as a visual artist.</p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Commercial Project -->
-                <div class="project-card relative overflow-hidden rounded-lg">
-                    <img src="/images/1.png" alt="Brand Identity Project" class="w-full h-auto">
-                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-75 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Project 1 -->
+                <div class="project-card relative overflow-hidden rounded-full w-48 h-48 md:w-64 md:h-64 mx-auto">
+                    <img src="/images/1.png" alt="Brand Identity" class="w-full h-full object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-75 opacity-0 transition-opacity duration-300 flex items-center justify-center rounded-full">
                         <div class="text-center text-white p-4">
                             <h3 class="text-xl font-bold mb-2">Corporate Identity</h3>
-                            <p class="mb-4">Brand Strategy & Visual Identity</p>
+                            <p class="mb-4">Brand Strategy</p>
                             <a href="https://www.instagram.com/p/DFVbp8bIlEZ/" target="_blank" class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition">
                                 View Project
                             </a>
                         </div>
                     </div>
                 </div>
-                <!-- Freelance Project -->
-                <div class="project-card relative overflow-hidden rounded-lg">
-                    <img src="/images/2.png" alt="Digital Design Project" class="w-full h-auto">
-                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-75 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+
+                <!-- Project 2 -->
+                <div class="project-card relative overflow-hidden rounded-full w-48 h-48 md:w-64 md:h-64 mx-auto">
+                    <img src="/images/2.png" alt="Digital Design" class="w-full h-full object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-75 opacity-0 transition-opacity duration-300 flex items-center justify-center rounded-full">
                         <div class="text-center text-white p-4">
                             <h3 class="text-xl font-bold mb-2">Digital Campaign</h3>
-                            <p class="mb-4">Social Media & Digital Marketing</p>
+                            <p class="mb-4">Social Media</p>
                             <a href="https://www.instagram.com/p/CouzS7cNH3p/" target="_blank" class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition">
                                 View Project
                             </a>
                         </div>
                     </div>
                 </div>
-                <!-- Personal Art -->
-                <div class="project-card relative overflow-hidden rounded-lg">
-                    <img src="/images/3.png" alt="Illustration Project" class="w-full h-auto">
-                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-75 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+
+                <!-- Project 3 -->
+                <div class="project-card relative overflow-hidden rounded-full w-48 h-48 md:w-64 md:h-64 mx-auto">
+                    <img src="/images/3.png" alt="Illustration" class="w-full h-full object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-75 opacity-0 transition-opacity duration-300 flex items-center justify-center rounded-full">
                         <div class="text-center text-white p-4">
-                            <h3 class="text-xl font-bold mb-2">Artistic Expression</h3>
-                            <p class="mb-4">Digital Illustration & Painting</p>
+                            <h3 class="text-xl font-bold mb-2">Art Series</h3>
+                            <p class="mb-4">Digital Painting</p>
                             <a href="https://www.instagram.com/p/CosS2Y7tf7e/" target="_blank" class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition">
                                 View Project
                             </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 4 -->
+                <div class="project-card relative overflow-hidden rounded-full w-48 h-48 md:w-64 md:h-64 mx-auto">
+                    <img src="/images/4.png" alt="Packaging Design" class="w-full h-full object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-75 opacity-0 transition-opacity duration-300 flex items-center justify-center rounded-full">
+                        <div class="text-center text-white p-4">
+                            <h3 class="text-xl font-bold mb-2">Product Packaging</h3>
+                            <p class="mb-4">3D Rendering</p>
+                            <a href="#contact" class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card relative overflow-hidden rounded-full w-48 h-48 md:w-64 md:h-64 mx-auto">
+                    <img src="/images/5.png" alt="Editorial Design" class="w-full h-full object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-75 opacity-0 transition-opacity duration-300 flex items-center justify-center rounded-full">
+                        <div class="text-center text-white p-4">
+                            <h3 class="text-xl font-bold mb-2">Editorial Design</h3>
+                            <p class="mb-4">Layout Design</p>
+                            <a href="#contact" class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects 6-10 (Add similar structure) -->
+                <!-- Duplicate the above project card structure and update:
+                     - src="/images/6.png" to /10.png
+                     - alt text
+                     - Titles and categories
+                     - Links -->
+                <!-- Example Project 6 -->
+                <div class="project-card relative overflow-hidden rounded-full w-48 h-48 md:w-64 md:h-64 mx-auto">
+                    <img src="/images/6.png" alt="Typography" class="w-full h-full object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-75 opacity-0 transition-opacity duration-300 flex items-center justify-center rounded-full">
+                        <div class="text-center text-white p-4">
+                            <h3 class="text-xl font-bold mb-2">Typography</h3>
+                            <p class="mb-4">Lettering Design</p>
+                            <a href="#contact" class="border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue adding projects 7-10 following the same pattern -->
+
             </div>
 
             <!-- View More Button -->
@@ -125,7 +189,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="/images/me.png" alt="Hana Valibeik" class="rounded-lg shadow-lg">
+                    <img src="/images/me.png" alt="Hana Valibeik" class="rounded-lg shadow-lg w-full">
                 </div>
                 <div>
                     <h2 class="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
@@ -141,8 +205,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8">
@@ -164,5 +226,17 @@
             <p>© 2025 Hana Valibeik. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
